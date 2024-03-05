@@ -1,0 +1,25 @@
+@use '../assets/styles/mixins' as mixin;
+
+.presentation {
+    image-orientation: 180deg;
+}
+
+.protagonist {
+    background-color: #182819;
+
+    img {
+        object-fit: cover;
+    }
+
+    h1 {
+        font-size: 8rem;
+    }
+}
+
+.contentDetails {
+    .contentDetailsTitle {
+        h2 {
+            margin-left: 35px;
+        }
+    }
+}

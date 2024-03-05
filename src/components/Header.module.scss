@@ -1,0 +1,65 @@
+@use '../assets/styles/mixins' as mixin;
+
+
+.header {
+    position:absolute;
+    top:0;
+    left:0;
+    z-index:4;
+    height: 110px;
+    width:100%;
+    display: flex;
+    padding:0px 140px;
+    align-items: center;
+    justify-content: space-between;
+    img {
+        height:50px;
+    }
+    nav ul {
+        display:flex;
+        flex-direction: row;
+    }
+    nav ul li a {
+        margin-left:20px;
+        text-decoration: none;
+        color:white;
+        font-family:'Mack';
+    }
+}
+
+// .headerfixobjects {
+//     position:absolute;
+//     top:0;
+//     left:0;
+//     height:100vh;
+//     width:100%;
+//     opacity: 0;
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: center;
+//     align-items: center;
+//     text-transform: uppercase;
+//     a {
+//         position: relative;
+//         color: white;
+//         text-decoration: none;
+//         font-family: 'Mack';
+//         margin-top:300px;
+//     }
+//     a:after {
+//         content: '';
+//         position: absolute;
+//         left: 0px;
+//         display: block;
+//         width: 100%;
+//         height: 2px;
+//         background: white;
+//         transition: width .3s;
+//     }
+//     p {
+//         margin: 0;
+//         font-family: 'Mack';
+//         font-size: 20px;
+//         color:white;
+//     }
+// }

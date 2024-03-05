@@ -1,0 +1,23 @@
+@use '../assets/styles/mixins' as mixin;
+
+.protagonist {
+    background-color: #361515;
+
+    img {
+        object-position: bottom right;
+        object-fit: cover;
+    }
+
+    h1 {
+        font-size: 6rem;
+        text-align: center;
+    }
+}
+
+.contentDetails {
+    .contentDetailsTitle {
+        h2 {
+            margin-left: 13px;
+        }
+    }
+}

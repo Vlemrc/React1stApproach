@@ -1,0 +1,117 @@
+@use '../assets/styles/mixins' as mixin;
+
+// ANIMATION
+
+@keyframes slidein {
+    from {
+        transform: translate(0px, 40px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translate(0px, 0px);
+        opacity: 1;
+    }
+}
+
+// STYLE
+
+.presentation {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    min-width:100%;
+    min-height:100vh;
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.presentation::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(0deg, rgba(9, 9, 121, 0) 0%, rgba(217, 217, 217, 0) 60%, rgba(0, 0, 0, 0.5004595588235294) 100%);
+}
+
+.protagonist {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height:60vh;
+    width:27vw;
+    bottom:0;
+    left:0;
+    img {
+        border-radius: 100%;
+        width:20vw;
+        aspect-ratio: 1/1;
+    }
+    h1 {
+        font-family: 'Nuances';
+        position: absolute;
+        color: #fff;
+        font-style: italic;
+        font-weight:400;
+    }
+}
+
+.contentDetails {
+    height:100vh;
+    display: flex;
+    flex-direction: column;
+    margin-right:100px;
+    background-color:#F8F8F8;
+    width:40vw;
+    padding-left: 140px;
+    h1 {
+        font-size:52px;
+        text-transform: uppercase;
+        color:#000000;
+        font-family: 'Mack';
+        margin-top:160px;
+        line-height:60px;
+        margin-bottom:150px;
+        animation-name: slidein;
+        animation-duration: 1s;
+        animation-timing-function: ease-in-out;
+    }
+    p {
+        font-style: italic;
+        font-size: 16px;
+        font-weight: 500;
+        color: #000000;
+        padding-right:50px;
+        animation-name: slidein;
+        animation-duration: 1s;
+        animation-timing-function: ease-in-out;
+    }
+    .contentDetailsTitle {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        margin-left: -140px;
+        animation-name: slidein;
+        animation-duration: 1s;
+        animation-timing-function: ease-in-out;
+        p {
+            margin:0;
+            margin-left:20px;
+            font-size:12px;
+            font-style:italic;
+            margin-top:7px;
+        }
+        h2 {
+            font-size: 24px;
+            font-family: 'Mack';
+            color: #000000;
+            text-transform: uppercase;
+            padding-right: 40px;
+        }
+    }
+}

@@ -1,0 +1,49 @@
+@use "./base";
+@use "./variables";
+@use "./flex";
+@use "./utils";
+@use "./debug";
+@use "./themes";
+
+
+// SWIPER PROGRESS BAR
+
+.swiper {
+    width:100vw;
+}
+
+.swiper .swiper-pagination-progressbar {
+    bottom: 50px !important;
+    left: 50px !important;
+    top: unset !important;
+    width: 4%;
+    height:3px;
+}
+
+.swiper-pagination-progressbar .swiper-pagination-progressbar-fill {
+    background-color:#ffffff;
+}
+
+.swipertitle {
+    position:absolute;
+    z-index:5;
+}
+
+.swiper-button-prev, .swiper-button-next {
+    color: #ffffff;
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+    font-size:20px;
+    font-weight: 700;
+}
+
+.basepage {
+    display: flex;
+    flex-direction: row;
+}
+
+.horizontalScroll {
+    overflow-x: auto;
+}

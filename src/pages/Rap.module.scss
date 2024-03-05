@@ -1,0 +1,63 @@
+@use '../assets/styles/mixins' as mixin;
+
+.presentation {
+    background-position: 50% 80%;
+}
+
+.protagonist {
+    background-color: #1D1D28;
+    img {
+        object-fit: cover;
+    }
+    h1 {
+        font-size: 8rem;
+    }
+}
+
+.contentDetails {
+    .contentDetailsTitle {
+        h2 {
+            margin-left: 13px;
+        }
+    }
+}
+
+.musiclistener {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    min-width:100vw;
+    background-color: #1D1D28;
+    gap:100px;
+}
+
+.song {
+    padding:50px;
+    border-radius: 20px;
+    -webkit-box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    img {
+        height:200px;
+        width:200px;
+        object-fit: cover;
+        border-radius:10px;
+    }
+    h1 {
+        font-size:42px;
+        color:#56565E;
+        font-family: 'Nuances';
+        font-weight: 400;
+        margin-top:20px;
+    }
+    h2 {
+        color:#fff;
+        font-family: 'mack';
+        font-size: 20px;
+        text-transform: uppercase;
+        font-weight: 600;
+        transform: translateY(-20px);
+    }
+}
